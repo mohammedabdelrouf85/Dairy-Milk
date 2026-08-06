@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-cadbury-purple: #4A0E4E;
+  --color-cadbury-purple-dark: #2A052D;
+  --color-cadbury-purple-deep: #1A021C;
+  --color-cadbury-purple-light: #6B1A70;
+  --color-cadbury-gold: #E5C158;
+  --color-cadbury-gold-light: #F8E8A6;
+  --color-cadbury-gold-dark: #B89028;
+  --color-cadbury-cream: #FFF9EF;
+  --color-cadbury-cream-dark: #F5EBE0;
+  --color-cadbury-milk: #FDFBF7;
+  --color-cadbury-chocolate: #3D1E13;
+
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-accent: "Cinzel Decorative", serif;
+
+  --shadow-gold-glow: 0 0 25px rgba(229, 193, 88, 0.35);
+  --shadow-purple-glow: 0 0 30px rgba(74, 14, 78, 0.5);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #1A021C;
+}
+::-webkit-scrollbar-thumb {
+  background: #4A0E4E;
+  border-radius: 5px;
+  border: 2px solid #1A021C;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E5C158;
+}
+
+/* Custom Gold & Purple Gradients */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF0B3 0%, #E5C158 50%, #997A1E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #F8E8A6 0%, #E5C158 50%, #B89028 100%);
+}
+
+.bg-purple-gradient {
+  background: linear-gradient(135deg, #4A0E4E 0%, #2A052D 100%);
+}
