@@ -10,7 +10,7 @@ export const ProcessStory = () => {
       subtitle: 'From Cocoa Life Farms',
       desc: 'Selected from certified 100% sustainable cocoa farms in Ghana and West Africa, ensuring fair livelihoods for local farming communities.',
       icon: FaSeedling,
-      image: '/assets/images/cadbury-cocoa-beans.png',
+      image: './assets/images/cadbury-cocoa-beans.png',
     },
     {
       step: '02',
@@ -18,7 +18,7 @@ export const ProcessStory = () => {
       subtitle: 'Pure Dairy Richness',
       desc: 'Fresh liquid milk sourced from local British dairy farms is condensed and poured directly into every batch, creating Cadbury\'s signature creamy melt.',
       icon: FaGlassWater,
-      image: '/assets/images/cadbury-luxury-table.jpg',
+      image: './assets/images/cadbury-luxury-table.jpg',
     },
     {
       step: '03',
@@ -26,7 +26,7 @@ export const ProcessStory = () => {
       subtitle: 'Mastering Flavor & Texture',
       desc: 'Slowly stirred and aerated for hours to develop that velvety smooth, melt-in-the-mouth texture unique to Cadbury Dairy Milk.',
       icon: FaFire,
-      image: '/assets/images/cadbury-conching-melt.png',
+      image: './assets/images/cadbury-conching-melt.png',
     },
     {
       step: '04',
@@ -34,7 +34,7 @@ export const ProcessStory = () => {
       subtitle: 'Sealed for Pure Joy',
       desc: 'Wrapped in our legendary Royal Purple and Gold foil pack, preserving freshness and tradition since 1905.',
       icon: FaGift,
-      image: '/assets/images/cadbury-truffles-flatlay.jpg',
+      image: './assets/images/cadbury-truffles-flatlay.jpg',
     },
   ];
 

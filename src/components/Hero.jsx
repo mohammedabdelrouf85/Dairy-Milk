@@ -145,7 +145,7 @@ export const Hero = () => {
             {/* Card Image Container */}
             <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-cadbury-purple-deep flex items-center justify-center">
               <img
-                src="/assets/images/cadbury-luxury-table.jpg"
+                src="./assets/images/cadbury-luxury-table.jpg"
                 alt="Cadbury Dairy Milk Luxury Chocolate Table"
                 className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
               />
