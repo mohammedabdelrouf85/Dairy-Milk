@@ -12,15 +12,15 @@ export const Navbar = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-40 w-full backdrop-blur-xl bg-cadbury-cream/85 dark:bg-cadbury-purple-dark/85 border-b border-cadbury-gold/20 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-6 sm:px-12 h-20 flex items-center justify-between">
+    <header className="sticky top-0 z-40 w-full backdrop-blur-xl bg-cadbury-cream/90 dark:bg-cadbury-purple-dark/90 border-b border-cadbury-gold/20 transition-colors duration-300">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 h-16 sm:h-20 flex items-center justify-between">
         
         {/* Brand Logo */}
-        <a href="#" className="flex items-center gap-3 group">
-          <span className="font-accent text-2xl sm:text-3xl font-bold tracking-wider text-cadbury-purple dark:text-cadbury-gold group-hover:scale-105 transition-transform">
+        <a href="#" className="flex items-center gap-2 sm:gap-3 group">
+          <span className="font-accent text-xl sm:text-3xl font-bold tracking-wider text-cadbury-purple dark:text-cadbury-gold group-hover:scale-105 transition-transform">
             Cadbury
           </span>
-          <span className="text-xs font-semibold px-3 py-1 rounded-full bg-cadbury-gold/20 text-cadbury-purple dark:text-cadbury-gold border border-cadbury-gold/30">
+          <span className="text-[10px] sm:text-xs font-semibold px-2 sm:px-3 py-0.5 sm:py-1 rounded-full bg-cadbury-gold/20 text-cadbury-purple dark:text-cadbury-gold border border-cadbury-gold/30">
             Dairy Milk
           </span>
         </a>
@@ -45,11 +45,11 @@ export const Navbar = () => {
           </a>
         </nav>
 
-        {/* Mobile Toggle */}
+        {/* Mobile Toggle Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle Menu"
-          className="md:hidden p-2.5 rounded-xl bg-cadbury-gold/20 text-cadbury-purple dark:text-cadbury-gold border border-cadbury-gold/30"
+          className="md:hidden p-2.5 rounded-xl bg-cadbury-gold/20 text-cadbury-purple dark:text-cadbury-gold border border-cadbury-gold/30 active:scale-95 transition-transform"
         >
           {isOpen ? <FaTimes className="w-5 h-5" /> : <FaBars className="w-5 h-5" />}
         </button>
@@ -70,11 +70,18 @@ export const Navbar = () => {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-lg font-serif py-2 text-cadbury-cream hover:text-cadbury-gold"
+                  className="text-base font-serif py-2 text-cadbury-cream hover:text-cadbury-gold border-b border-white/5 active:bg-white/5 rounded-lg"
                 >
                   {link.name}
                 </a>
               ))}
+              <a
+                href="#impact"
+                onClick={() => setIsOpen(false)}
+                className="mt-2 py-3 rounded-full bg-gold-gradient text-cadbury-purple-dark font-bold text-sm shadow-md text-center"
+              >
+                Explore Joy
+              </a>
             </div>
           </motion.div>
         )}

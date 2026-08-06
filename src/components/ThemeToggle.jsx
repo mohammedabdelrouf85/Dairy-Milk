@@ -15,7 +15,7 @@ export const ThemeToggle = () => {
       whileTap={{ scale: 0.9 }}
       transition={{ type: 'spring', stiffness: 400, damping: 17 }}
       aria-label="Toggle Dark/Light Theme"
-      className="fixed bottom-6 right-6 z-50 p-3.5 rounded-full shadow-2xl transition-all duration-200 border-2 bg-white/90 dark:bg-cadbury-purple-dark/95 backdrop-blur-md border-cadbury-gold/60 dark:border-cadbury-gold text-cadbury-purple dark:text-cadbury-gold shadow-gold-glow flex items-center justify-center cursor-pointer group"
+      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 p-3 sm:p-3.5 rounded-full shadow-2xl transition-all duration-200 border-2 bg-white/95 dark:bg-cadbury-purple-dark/95 backdrop-blur-md border-cadbury-gold/60 dark:border-cadbury-gold text-cadbury-purple dark:text-cadbury-gold shadow-gold-glow flex items-center justify-center cursor-pointer group active:scale-90"
     >
       <motion.div
         key={isDark ? 'dark' : 'light'}
@@ -25,9 +25,9 @@ export const ThemeToggle = () => {
         transition={{ duration: 0.2 }}
       >
         {isDark ? (
-          <FaSun className="w-5 h-5 group-hover:text-amber-300 transition-colors" />
+          <FaSun className="w-4 h-4 sm:w-5 sm:h-5 group-hover:text-amber-300 transition-colors" />
         ) : (
-          <FaMoon className="w-5 h-5 group-hover:text-cadbury-purple-light transition-colors" />
+          <FaMoon className="w-4 h-4 sm:w-5 sm:h-5 group-hover:text-cadbury-purple-light transition-colors" />
         )}
       </motion.div>
     </motion.button>
