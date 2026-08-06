@@ -7,6 +7,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: '/Dairy-Milk/',
   server: {
     port: 3000,
     open: true
